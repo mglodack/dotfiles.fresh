@@ -1,3 +1,6 @@
+[include]
+  path = ~/.user.gitconfig
+
 [alias]
   co = checkout
   s = status
