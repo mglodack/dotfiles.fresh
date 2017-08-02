@@ -1,0 +1,36 @@
+set nocompatible
+filetype off
+
+call plug#begin()
+
+" Colors
+Plug 'croaky/vim-colors-github'
+Plug 'flazz/vim-colorschemes'
+Plug 'chriskempson/base16-vim'
+Plug 'w0ng/vim-hybrid'
+Plug 'znake/znake-vim'
+
+" " Editor Utils
+Plug 'junegunn/vim-easy-align'
+Plug 'bronson/vim-trailing-whitespace'
+Plug 'tpope/vim-surround'
+Plug 'ervandew/supertab'
+
+" " Syntax Highlighting
+Plug 'kongo2002/fsharp-vim'
+Plug 'elixir-lang/vim-elixir'
+Plug 'derekwyatt/vim-scala'
+Plug 'fatih/vim-go'
+Plug 'mxw/vim-jsx'
+Plug 'raichoo/purescript-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'lambdatoast/elm.vim'
+Plug 'rust-lang/rust.vim'
+
+" " Shell Utils
+Plug 'rking/ag.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
+call plug#end()
+filetype plugin indent on
