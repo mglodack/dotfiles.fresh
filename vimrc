@@ -19,7 +19,7 @@ set expandtab
 set number
 
 if filereadable(expand("~/.vim/vimrc.plugins"))
-	source ~/.vim/vimrc.plugins
+  source ~/.vim/vimrc.plugins
 endif
 
 " FZF
@@ -27,7 +27,33 @@ let $FZF_DEFAULT_COMMAND = 'ag -l -g ""'
 map <C-p> :Files<CR>
 
 " File behavior
-" TODO: Make sure these folders get created when symlinking dotfiles
-set backupdir=~/.vim/backups
-set undodir=~/.vim/undofiles
+let &backupdir = $HOME . "/.vim/backups"
+let &undodir = $HOME . "/vim/undofiles"
+
+function! EnsureDirExists(dir)
+  if !isdirectory(a:dir)
+    if exists("*mkdir")
+      call mkdir(a:dir,'p')
+      echo "SUCCESS" . a:dir
+    else
+      echo "WARNING: Unable to create directory" . a:dir
+    endif
+  endif
+endfunction
+
+call EnsureDirExists(&backupdir)
+call EnsureDirExists(&undodir)
+
+" Crosshair (CursorColumn)
+set nocursorcolumn
+set nocursorline
+
+" Misc
+set colorcolumn=80
 set noswapfile
+
+" NOTE: This should be at the bottom
+" Colors
+set t_Co=256
+set background=dark
+colorscheme PaperColor

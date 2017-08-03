@@ -4,11 +4,8 @@ filetype off
 call plug#begin()
 
 " Colors
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'croaky/vim-colors-github'
-Plug 'flazz/vim-colorschemes'
-Plug 'chriskempson/base16-vim'
-Plug 'w0ng/vim-hybrid'
-Plug 'znake/znake-vim'
 
 " " Editor Utils
 Plug 'junegunn/vim-easy-align'
