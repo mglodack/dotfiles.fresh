@@ -1,0 +1,4 @@
+### git
+
+alias gcm='git checkout master && git pull'
+alias g='git'
