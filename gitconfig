@@ -5,6 +5,8 @@
   co = checkout
   s = status
   ci = commit
+  d = diff
+  ds = diff --staged
 
 [core]
   editor = vim
