@@ -7,6 +7,15 @@
   ci = commit
   d = diff
   ds = diff --staged
+  br = branch
 
 [core]
   editor = vim
+  ignoreCase = true
+  pager      = less -F -X
+  safecrlf   = warn
+  trustctime = false
+  commentchar = %
+
+[push]
+	default = matching
