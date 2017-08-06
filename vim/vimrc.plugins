@@ -12,6 +12,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab'
+Plug 'scrooloose/nerdtree'
 
 " " Syntax Highlighting
 Plug 'kongo2002/fsharp-vim'
