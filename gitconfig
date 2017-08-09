@@ -8,12 +8,14 @@
   d = diff
   ds = diff --staged
   br = branch
+  lc = log -n 1
+  poh = push -u origin HEAD
 
 [core]
   editor = vim
   ignoreCase = true
   pager      = less -F -X
-  safecrlf   = warn
+  safecrlf   = false
   trustctime = false
   commentchar = %
 
