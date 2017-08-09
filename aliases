@@ -2,3 +2,13 @@
 
 alias gcm='git checkout master && git pull'
 alias g='git'
+
+### FAKE (.NET)
+case "$OSTYPE" in
+  (linux*)
+    alias fake='./fake.sh'
+  ;;
+  (cygwin*)
+    alias fake='./fake.bat'
+  ;;
+esac
