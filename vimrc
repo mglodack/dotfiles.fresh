@@ -57,3 +57,7 @@ set noswapfile
 set t_Co=256
 set background=dark
 colorscheme PaperColor
+
+" Search options
+" Highlight search
+set hlsearch
