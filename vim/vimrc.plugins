@@ -15,15 +15,18 @@ Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree'
 
 " " Syntax Highlighting
-Plug 'kongo2002/fsharp-vim'
-Plug 'elixir-lang/vim-elixir'
+Plug 'Keithbsmiley/rspec.vim'
 Plug 'derekwyatt/vim-scala'
+Plug 'elixir-lang/vim-elixir'
 Plug 'fatih/vim-go'
-Plug 'mxw/vim-jsx'
-Plug 'raichoo/purescript-vim'
-Plug 'pangloss/vim-javascript'
+Plug 'kongo2002/fsharp-vim'
 Plug 'lambdatoast/elm.vim'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
+Plug 'raichoo/purescript-vim'
 Plug 'rust-lang/rust.vim'
+Plug 'tpope/vim-rails'
+Plug 'vim-ruby/vim-ruby'
 
 " " Shell Utils
 Plug 'rking/ag.vim'
