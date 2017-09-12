@@ -21,8 +21,9 @@ set expandtab
 " " Line numbers
 set number
 
-if filereadable(expand("~/.vim/vimrc.plugins"))
-  source ~/.vim/vimrc.plugins
+" Plug
+if filereadable(expand("~/.config/nvim/plugins.vim"))
+  source ~/.config/nvim/plugins.vim
 endif
 
 " FZF
@@ -30,8 +31,8 @@ let $FZF_DEFAULT_COMMAND = 'ag -l -g ""'
 map <C-p> :Files<CR>
 
 " File behavior
-let &backupdir = $HOME . "/.vim/backups"
-let &undodir = $HOME . "/vim/undofiles"
+let &backupdir = $HOME . "/.nvim/backups"
+let &undodir = $HOME . "/.nvim/undofiles"
 
 function! EnsureDirExists(dir)
   if !isdirectory(a:dir)
@@ -67,7 +68,9 @@ set hlsearch
 
 " vim-test strategy
 let test#strategy = "tslime"
+let test#ruby#rspec#executable = 'tmux_unzoom; bin/rspec'
 
 " Vim test bindings
 nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>
+nmap <silent> <leader>A :TestSuite<CR>

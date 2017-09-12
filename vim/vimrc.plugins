@@ -13,6 +13,7 @@ Plug 'bronson/vim-trailing-whitespace'
 Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree'
+Plug 'janko-m/vim-test'
 
 " " Syntax Highlighting
 Plug 'Keithbsmiley/rspec.vim'

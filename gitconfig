@@ -12,7 +12,7 @@
   poh = push -u origin HEAD
 
 [core]
-  editor = vim
+  editor = nvim
   ignoreCase = true
   pager      = less -F -X
   safecrlf   = false

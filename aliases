@@ -12,3 +12,5 @@ case "$OSTYPE" in
     alias fake='./fake.bat'
   ;;
 esac
+
+alias vim='nvim'
