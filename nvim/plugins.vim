@@ -5,6 +5,7 @@ Plug 'jgdavey/tslime.vim'
 
 "fuzzy finding
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 "looks
 Plug 'itchyny/lightline.vim'
