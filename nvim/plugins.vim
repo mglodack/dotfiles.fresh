@@ -1,6 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " vim + tmux
+Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'jgdavey/tslime.vim'
 
 "fuzzy finding

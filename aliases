@@ -14,3 +14,9 @@ case "$OSTYPE" in
 esac
 
 alias vim='nvim'
+
+tmux_unzoom() {
+  if $(tmux list-panes -F '#{?window_zoomed_flag,true,false}' | head -n 1); then
+    tmux resize-pane -Z
+  fi
+}
