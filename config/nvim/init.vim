@@ -70,6 +70,10 @@ set hlsearch
 let test#strategy = "tslime"
 let test#ruby#rspec#executable = 'tmux_unzoom; bin/rspec'
 
+" tslime
+let g:tslime_always_current_session = 1
+let g:tslime_always_current_window = 1
+
 " Vim test bindings
 nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>

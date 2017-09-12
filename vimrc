@@ -65,9 +65,6 @@ colorscheme PaperColor
 " Highlight search
 set hlsearch
 
-" vim-test strategy
-let test#strategy = "tslime"
-
 " Vim test bindings
 nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>

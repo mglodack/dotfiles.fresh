@@ -1,8 +1,10 @@
 call plug#begin('~/.config/nvim/plugged')
 
+" vim + tmux
+Plug 'jgdavey/tslime.vim'
+
 "fuzzy finding
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 
 "looks
 Plug 'itchyny/lightline.vim'
@@ -26,34 +28,31 @@ Plug 'kana/vim-textobj-user', { 'for': 'ruby' }
 Plug 'nelstrom/vim-textobj-rubyblock', { 'for': 'ruby' }
 
 " Langauge specific
+Plug 'ElmCast/elm-vim', { 'for': 'elm' }
+Plug 'Keithbsmiley/rspec.vim', { 'for': 'ruby' }
+Plug 'elixir-lang/vim-elixir', { 'for': 'elixir,eelixir' }
 Plug 'fatih/vim-go', { 'for': 'golang' }
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
+Plug 'keith/swift.vim', { 'for': 'swift' }
 Plug 'mxw/vim-jsx', { 'for': 'javascript' }
 Plug 'othree/javascript-libraries-syntax.vim', { 'for': 'javascript' }
-Plug 'keith/swift.vim', { 'for': 'swift' }
-Plug 'elixir-lang/vim-elixir', { 'for': 'elixir,eelixir' }
-Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
-Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
-Plug 'Keithbsmiley/rspec.vim', { 'for': 'ruby' }
-Plug 'tpope/vim-rails', { 'for': 'ruby' }
-Plug 'ElmCast/elm-vim', { 'for': 'elm' }
-Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'rodjek/vim-puppet', { 'for': 'puppet' }
-Plug 'hashivim/vim-terraform', { 'for': 'terraform' }
-
-"Autocomplete
-Plug 'Valloric/YouCompleteMe'
+Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
+Plug 'tpope/vim-rails', { 'for': 'ruby' }
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 
 "testing
 Plug 'janko-m/vim-test'
 
 "colors
-Plug 'nanotech/jellybeans.vim'
-Plug 'morhetz/gruvbox'
-Plug 'sjl/badwolf'
 Plug 'chriskempson/base16-vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'junegunn/seoul256.vim'
+Plug 'morhetz/gruvbox'
+Plug 'nanotech/jellybeans.vim'
 Plug 'rakr/vim-one'
+Plug 'sjl/badwolf'
 
 call plug#end()

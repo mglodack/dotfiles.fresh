@@ -8,12 +8,12 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'croaky/vim-colors-github'
 
 " " Editor Utils
-Plug 'junegunn/vim-easy-align'
 Plug 'bronson/vim-trailing-whitespace'
-Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab'
-Plug 'scrooloose/nerdtree'
 Plug 'janko-m/vim-test'
+Plug 'junegunn/vim-easy-align'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround'
 
 " " Syntax Highlighting
 Plug 'Keithbsmiley/rspec.vim'
@@ -32,7 +32,6 @@ Plug 'vim-ruby/vim-ruby'
 " " Shell Utils
 Plug 'rking/ag.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 
 call plug#end()
 filetype plugin indent on
