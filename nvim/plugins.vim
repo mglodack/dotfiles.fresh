@@ -57,4 +57,6 @@ Plug 'nanotech/jellybeans.vim'
 Plug 'rakr/vim-one'
 Plug 'sjl/badwolf'
 
+Plug 'bronson/vim-trailing-whitespace'
+
 call plug#end()
