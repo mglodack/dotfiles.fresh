@@ -20,6 +20,7 @@ set expandtab
 
 " " Line numbers
 set number
+set relativenumber
 
 if filereadable(expand("~/.vim/vimrc.plugins"))
   source ~/.vim/vimrc.plugins
@@ -68,3 +69,12 @@ set hlsearch
 " Vim test bindings
 nmap <silent> <leader>t :TestNearest<CR>
 nmap <silent> <leader>T :TestFile<CR>
+
+" Always start at top of file in commit message editor
+autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
+
+" Move line
+nnoremap <S-Up> :m-2<CR>
+nnoremap <S-Down> :m+<CR>
+inoremap <S-Up> <Esc>:m-2<CR>
+inoremap <S-Down> <Esc>:m+<CR>
