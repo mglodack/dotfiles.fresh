@@ -31,8 +31,8 @@ let $FZF_DEFAULT_COMMAND = 'ag -l -g ""'
 map <C-p> :Files<CR>
 
 " File behavior
-let &backupdir = $HOME . "/.vim/backups"
-let &undodir = $HOME . "/vim/undofiles"
+let &backupdir = $HOME . "/.nvim/backups"
+let &undodir = $HOME . "/.nvim/undofiles"
 
 function! EnsureDirExists(dir)
   if !isdirectory(a:dir)
